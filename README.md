@@ -23,14 +23,15 @@ curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | 
 ```
 
 ### Windows
+```bash
 powershell -ExecutionPolicy ByPass -c "irm [https://astral.sh/uv/install.ps1](https://astral.sh/uv/install.ps1) | iex"
-
+```
 ---
 
 ## Installation & Setup
 
 ### Clone the repository
-git clone [https://github.com/andrzejdudek/networkDivider.git]
+git clone https://github.com/andrzejdudek/networkDivider.git
 cd networkDivider
 
 ### Sync dependencies

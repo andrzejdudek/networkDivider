@@ -91,12 +91,18 @@ class MainWindow(ctk.CTk):
         lines = [
             line.strip() for line in text_content.splitlines() if line.strip()
         ]
-
+        
         if not lines:
             messagebox.showwarning("Missing Input", "Enter port configuration!")
             return
-
-        output_dir = filedialog.askdirectory(title="Select Output Folder")
+        
+        initial_directory = ""
+        if self.manager.file_path:
+            initial_directory = os.path.dirname(self.manager.file_path)
+        
+        output_dir = filedialog.askdirectory(
+            title="Select Output Folder",
+            initialdir=initial_direcotry)
         if not output_dir:
             return
 
