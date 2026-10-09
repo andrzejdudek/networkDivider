@@ -1,0 +1,10 @@
+[project]
+name = "networkdivider"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "customtkinter>=6.0.0",
+    "scikit-rf>=2.1.0",
+]
