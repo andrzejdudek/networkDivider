@@ -102,7 +102,7 @@ class MainWindow(ctk.CTk):
         
         output_dir = filedialog.askdirectory(
             title="Select Output Folder",
-            initialdir=initial_direcotry)
+            initialdir=initial_directory)
         if not output_dir:
             return
 
